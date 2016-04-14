@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="@dimen/dimen8"
+    android:background="@drawable/shadow_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_car_ht"
+        android:id="@+id/card_view"
+        android:background="@color/yellow">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           android:background="@drawable/user_shadow" />
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="@dimen/pro_pic_ht"
+            android:layout_height="@dimen/pro_pic_ht"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dimen8"
+            android:src="@drawable/place_holder"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="1dp" />
+
+        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_pic"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="P.Srinivas"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/right_arrow" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/htab_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_ht"
+        android:background="@drawable/header"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        app:layout_collapseMode="parallax" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/tool_bar_bg" />
+    <!--<ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_arrow_left" />-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/window_bg_1">
+
+        <RelativeLayout
+            android:id="@+id/profile_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/profile_ht"
+            android:orientation="horizontal">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/pro_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/place_holder"
+                app:siBorderColor="@color/white"
+                app:siBorderWidth="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_toRightOf="@+id/pro_pic"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/fac_name"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp" />
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    android:id="@+id/designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Asst.Prof"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/drak_gray">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen8">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/ov_p"
+                        android:text="---"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Total Score"
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/perf_card_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/profile_ll"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/ll_retry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <com.egnify.vignan.utils.p_MyCustomTextView
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/dimen32"
+                android:text="Please Check Your Internet Connection!!"/>
+            <com.rey.material.widget.Button
+                android:id="@+id/retry"
+                android:background="@color/accent"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:layout_height="45dp"
+                android:padding="@dimen/dimen8"
+                android:text="Retry"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/dimen8"
+        android:gravity="center"
+        android:background="@android:color/transparent" >
+        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            android:id="@+id/update_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Updating Data..."
+            android:textColor="@color/white"/>
+        <!--<com.rey.material.widget.ProgressView
+            android:id="@+id/bar_progress"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/update_tx"
+            app:v_styleId="@style/LightInCircularProgressDrawable" />-->
+    </RelativeLayout>
+</RelativeLayout>

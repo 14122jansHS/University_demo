@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.egnify.vignan2.Fragments.teaching.overall_t">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen8"
+        android:background="@drawable/shadow_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ov_click"
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:layout_height="35dp"
+            android:background="@color/red">
+
+            <com.egnify.vignan.utils.p_MyCustomTextView
+                android:id="@+id/ob_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Overview"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:id="@+id/att_click"
+            android:gravity="center"
+            android:layout_height="35dp"
+            android:background="@color/white">
+
+            <com.egnify.vignan.utils.p_MyCustomTextView
+                android:id="@+id/att_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="Attendance" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:id="@+id/mar_click"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <com.egnify.vignan.utils.p_MyCustomTextView
+                android:id="@+id/mar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Marks" />
+        </LinearLayout>
+    </LinearLayout>
+   <FrameLayout
+       android:id="@+id/containder"
+       android:layout_marginTop="@dimen/below_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></FrameLayout>
+</FrameLayout>

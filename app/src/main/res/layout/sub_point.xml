@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/shadow_bg"
+    android:layout_marginTop="@dimen/dimen8"
+    android:layout_height="match_parent">
+
+<com.egnify.vignan.utils.p_MyCustomTextView_regular
+    android:id="@+id/met_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen8"
+    android:text="1. Research Papers published- Journals"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/yellow"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/table_header"
+        android:weightSum="6"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Type"
+            android:gravity="center_horizontal"
+            android:layout_weight="3"/>
+        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Count"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Marks"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Total"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a_row_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

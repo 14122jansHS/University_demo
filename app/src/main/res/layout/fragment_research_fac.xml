@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/dimen72"
+    android:background="@color/white"
+    android:padding="@dimen/dimen8"
+    tools:context="com.egnify.vignan.Activities.research_contri$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/sv_main_layout"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/below_toolbar"
+            android:orientation="vertical">
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/a2"
+                android:padding="@dimen/dimen8"
+                android:gravity="center">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    android:id="@+id/over_p"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OverAll Score: "
+                    android:textColor="@color/white" />
+            </LinearLayout>-->
+            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                android:id="@+id/over_p"
+                android:gravity="center"
+                android:padding="@dimen/dimen8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OverAll Score: "
+                android:textColor="@color/primary_text" />
+           <!-- <com.rey.material.widget.ProgressView
+                android:id="@+id/progress_circle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/profile_ll"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                app:v_styleId="@style/LightInCircularProgressDrawable" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

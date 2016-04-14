@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.egnify.vignan2.Fragments.teaching.mid1_t">
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen8"
+            android:background="@drawable/shadow_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ov_click"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@color/red">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView
+                    android:id="@+id/ob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Overview"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/de_click"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@color/white">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView
+                    android:id="@+id/de_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:text="Details" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/overview_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chartheader"
+                android:layout_width="fill_parent"
+                android:layout_height="210dp"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.BarChart xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/chartview"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dblue"
+                    android:orientation="horizontal">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:id="@+id/metric_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dimen8"
+                        android:text="Test Report Analysis"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/table_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/lblue"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+               android:layout_marginLeft="16dp"
+                        android:layout_weight="3"
+                        android:gravity="left"
+                        android:text="Metric"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Percentage"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Points"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/a_row_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+        <LinearLayout
+            android:id="@+id/details_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen56"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/stu_row_header_m_d" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/stu_row_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

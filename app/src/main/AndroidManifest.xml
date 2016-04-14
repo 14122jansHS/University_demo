@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.egnify.vignan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name=".Network.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.ScrollingActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.new_home_activity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_new_home_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.new_home_hod"
+            android:label="@string/title_activity_new_home_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Academics"
+            android:label="@string/title_activity_academics"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.counselling"
+            android:label="@string/title_activity_counselling"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activities.new_home_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.vignan.Activities.new_home_activity" />
+        </activity>
+        <activity
+            android:name=".Activities.research_contri"
+            android:label="@string/title_activity_research_contri"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activities.new_home_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.vignan.Activities.new_home_activity" />
+        </activity>
+        <activity
+            android:name=".Activities.other_proff_activitis"
+            android:label="@string/title_activity_other_proff_activitis"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activities.new_home_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.vignan.Activities.new_home_activity" />
+        </activity>
+        <activity
+            android:name=".Activities.fac_details_hod"
+            android:label="@string/title_activity_fac_details_hod"
+
+            android:parentActivityName=".Activities.new_home_hod"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.vignan.Activities.new_home_hod" />
+        </activity>
+        <activity
+            android:name=".Activities.Vice_c_main"
+            android:label="@string/title_activity_vice_c_main"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".splash_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.vignan.splash_screen" />
+        </activity>
+        <activity
+            android:name=".Activities.vc_dept_view"
+            android:label="@string/title_activity_vc_dept_view"
+            android:parentActivityName=".Activities.Vice_c_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.vignan.Activities.Vice_c_main" />
+        </activity>
+        <activity
+            android:name=".Activities.sample_card"
+            android:label="@string/title_activity_vc_dept_view"
+            android:parentActivityName=".Activities.Vice_c_main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/pading"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.egnify.vignan.Fragments.class_attendance">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen8"
+            android:background="@drawable/shadow_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ov_click"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@color/red">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView
+                    android:id="@+id/ob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Overview"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:id="@+id/de_click"
+                android:layout_height="35dp"
+                android:background="@color/white">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView
+                    android:id="@+id/de_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:text="Details" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/overview_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chartheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.LineChart xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/line_chartview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_bg"
+                android:orientation="vertical">
+            <include layout="@layout/overall_card" />
+
+            <include layout="@layout/row_header" />
+
+            <LinearLayout
+                android:id="@+id/a_row_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout></LinearLayout>
+        </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/details_ll"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:background="@drawable/shadow_bg"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen56"
+    android:layout_height="match_parent">
+    <include layout="@layout/stu_row_header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/stu_row_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout> </ScrollView>
+</LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

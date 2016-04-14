@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.egnify.vignan2.Fragments.teaching.overall_m_t">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/dimen8"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="4.1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView
+                        android:id="@+id/m1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="45"
+                        android:textColor="@color/dblue"
+                        android:textSize="32dp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mid 1"
+                        android:textColor="@color/lblue"
+                        android:textSize="18dp" />
+                </LinearLayout>
+<View
+    android:layout_width="1dp"
+    android:layout_margin="@dimen/dimen8"
+    android:layout_height="match_parent"
+    android:background="@color/divider"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView
+                        android:id="@+id/m2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100"
+                        android:textColor="@color/dblue"
+                        android:textSize="32dp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mid 2"
+                        android:textColor="@color/lblue"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_margin="@dimen/dimen8"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView
+                        android:id="@+id/m3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100"
+                        android:textColor="@color/dblue"
+                        android:textSize="32dp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mid 3"
+                        android:textColor="@color/lblue"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_margin="@dimen/dimen8"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView
+                        android:id="@+id/avg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100"
+                        android:textColor="@color/dblue"
+                        android:textSize="32dp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Average"
+                        android:textColor="@color/lblue"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <include
+
+            layout="@layout/stu_row_header_o_a" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyler_stu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

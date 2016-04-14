@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/card_top"
+    android:background="@drawable/shadow_bg">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bg_col"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+             android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                    android:text="120"
+                    android:id="@+id/marks"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POINTS"
+                    android:layout_centerHorizontal="true"
+                   android:layout_alignParentBottom="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                android:id="@+id/perf_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="@color/primary_text"
+                android:text="Allotted Class"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/b_line"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/main_ll"
+        android:background="@color/yellow" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="54dp"
+        android:src="@drawable/shadow_oc" />
+</RelativeLayout>

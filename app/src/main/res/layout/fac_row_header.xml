@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cyan"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+            android:id="@+id/points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:text="Student Name"
+            android:textColor="@color/white" />
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:weightSum="4"
+    android:layout_weight="3">
+    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text="Alloted" />
+    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:text="Counselling" />
+    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:text="Research" />
+    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="Total" />
+</LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

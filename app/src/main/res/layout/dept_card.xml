@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/dimen8"
+    android:background="@drawable/shadow_bg"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/line_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/one_bg" />
+
+    <RelativeLayout
+        android:id="@+id/main_click"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen8"
+            android:layout_marginTop="18dp"
+
+            android:orientation="horizontal">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/hod_pic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/place_holder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hod_pic"
+                android:orientation="vertical">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    android:id="@+id/dept_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen8"
+                    android:singleLine="true"
+                    android:text="IT Department"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+
+                <com.egnify.vignan.utils.p_MyCustomTextView
+                    android:id="@+id/hod_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen8"
+                    android:text="HOD: Srinivas"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/circ_bg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen8"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/circle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1165"
+
+                    android:textColor="@color/white" />
+
+                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Points"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/banner_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/banner_bg"
+            android:paddingLeft="@dimen/dimen8">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alloted"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:id="@+id/alloted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2345"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen8"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Counselling"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:id="@+id/counselling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2345"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen8"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+
+                    android:orientation="vertical">
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Research"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                        android:id="@+id/research"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2345"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

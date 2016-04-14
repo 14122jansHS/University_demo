@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Vignan\'s Demo</string>
+    <string name="action_logout">Log Out</string>
+    <string name="vc_name">Vice Chairman</string>
+    <string name="hod">HOD</string>
+    <string name="faculty">Faculty</string>
+    <string name="demo_header_basetitle">Expand crd view</string>
+    <string name="demo_expand_customtitle3">yah!!!! success</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_new_home_activity">new_home_activity</string>
+    <string name="title_activity_academics">Teaching</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_counselling">Counselling Students</string>
+    <string name="title_activity_research_contri">Research Contribution</string>
+    <string name="title_activity_other_proff_activitis">Other Professional Activities</string>
+    <string name="title_activity_fac_details_hod">Department Performance</string>
+    <string name="title_activity_vice_c_main">Vice Chairman</string>
+    <string name="title_activity_vc_dept_view">vc_dept_view</string>
+    <string name="clickme">cup Cake</string>
+    <string name="hello_world">cake</string>
+    <string name="login_heading">Employee/Manager Login</string>
+    <string name="prompt_egnifyid">Emplyoee id</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="error_invalid_email">Wrong Employee ID</string>
+    <string name="error_invalid_password">Wrong Password</string>
+    <string name="error_field_required">This feild is required</string>
+</resources>

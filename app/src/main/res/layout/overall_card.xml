@@ -1,0 +1,28 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/d2"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/dimen8"
+        android:id="@+id/metric_name"
+        android:text="Workload Report Analysis"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:padding="@dimen/dimen8"
+        android:id="@+id/tot_points"
+        android:text="Total Points:"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>
