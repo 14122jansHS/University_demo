@@ -29,4 +29,5 @@
     <string name="error_invalid_email">Wrong Employee ID</string>
     <string name="error_invalid_password">Wrong Password</string>
     <string name="error_field_required">This feild is required</string>
+    <string name="title_activity_student">Student</string>
 </resources>

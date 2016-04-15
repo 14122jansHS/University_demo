@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name=".Network.AppController"
         android:allowBackup="true"
@@ -30,13 +31,13 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.ScrollingActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_scrolling"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.new_home_activity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_new_home_activity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.new_home_hod"
@@ -51,8 +52,8 @@
         <activity
             android:name=".Activities.counselling"
             android:label="@string/title_activity_counselling"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Activities.new_home_activity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -61,8 +62,8 @@
         <activity
             android:name=".Activities.research_contri"
             android:label="@string/title_activity_research_contri"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Activities.new_home_activity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -71,8 +72,8 @@
         <activity
             android:name=".Activities.other_proff_activitis"
             android:label="@string/title_activity_other_proff_activitis"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Activities.new_home_activity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -81,7 +82,6 @@
         <activity
             android:name=".Activities.fac_details_hod"
             android:label="@string/title_activity_fac_details_hod"
-
             android:parentActivityName=".Activities.new_home_hod"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -91,8 +91,8 @@
         <activity
             android:name=".Activities.Vice_c_main"
             android:label="@string/title_activity_vice_c_main"
-            android:screenOrientation="portrait"
             android:parentActivityName=".splash_screen"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -111,9 +111,11 @@
             android:name=".Activities.sample_card"
             android:label="@string/title_activity_vc_dept_view"
             android:parentActivityName=".Activities.Vice_c_main"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.student"
+            android:label="@string/title_activity_student"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

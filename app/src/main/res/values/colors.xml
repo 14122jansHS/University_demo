@@ -36,6 +36,7 @@
     <color name="third_bg">#8ac147</color>
     <color name="dblue">#0C47A1</color>
     <color name="lblue">#1665C1</color>
+    <color name="tbbg">#0c000000</color>
     <color name="black_alpha_40">#66000000</color>
     <color name="toolbarTransparent">#00FFFFFF</color>
     <color name="colorControlHighlight">@color/fifty_percent_transparency_grey_400</color>
