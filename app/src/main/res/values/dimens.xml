@@ -21,4 +21,12 @@
     <dimen name="color_height">48dp</dimen>
     <dimen name="card_corner_radius">2dp</dimen>
     <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_height">145dp</dimen>
+    <dimen name="final_mrks">465dp</dimen>
+    <dimen name="fee_details">605dp</dimen>
+    <dimen name="mid_mrks">325dp</dimen>
+    <dimen name="attend">185dp</dimen>
+    <dimen name="info_prof">40dp</dimen>
+
+
 </resources>

@@ -1,9 +1,15 @@
 package com.egnify.vignan.pojos;
 
+import java.io.Serializable;
+
 /**
  * Created by janardhanyerranagu on 3/26/16.
  */
-public class stu_info {
+public class stu_info implements Serializable {
+
+    String student_name;
+    String student_id;
+    String att_mid1;
 
     public String getStudent_name() {
         return student_name;
@@ -28,9 +34,4 @@ public class stu_info {
     public void setStudent_id(String student_id) {
         this.student_id = student_id;
     }
-
-    String student_name;
-    
-    String student_id;
-    String att_mid1;
 }

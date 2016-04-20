@@ -7,6 +7,7 @@
     <color name="tab_bg">#FAFAFA</color>
     <color name="primary_light">#B3E5FC</color>
     <color name="accent">#FFC107</color>
+    <color name="tabsScrollColor">#B6B6B6</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
@@ -37,6 +38,11 @@
     <color name="dblue">#0C47A1</color>
     <color name="lblue">#1665C1</color>
     <color name="tbbg">#0c000000</color>
+    <color name="purpule">#D066FA</color>
+    <color name="lred">#FF0000</color>
+    <color name="lgreen">#96D100</color>
+    <color name="blue">#00A8FF</color>
+    <color name="mdtp_transparent_black">#7f000000</color>
     <color name="black_alpha_40">#66000000</color>
     <color name="toolbarTransparent">#00FFFFFF</color>
     <color name="colorControlHighlight">@color/fifty_percent_transparency_grey_400</color>

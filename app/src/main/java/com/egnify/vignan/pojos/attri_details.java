@@ -1,9 +1,13 @@
 package com.egnify.vignan.pojos;
 
+import java.io.Serializable;
+
 /**
  * Created by janardhanyerranagu on 3/26/16.
  */
-public class attri_details {
+public class attri_details implements Serializable {
+    String alloted_mid1, exam, taken_mid1, marks;
+
     public String getAlloted_mid1() {
         return alloted_mid1;
     }
@@ -35,6 +39,4 @@ public class attri_details {
     public void setMarks(String marks) {
         this.marks = marks;
     }
-
-    String alloted_mid1,exam,taken_mid1,marks;
 }

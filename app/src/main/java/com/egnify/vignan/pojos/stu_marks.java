@@ -1,12 +1,13 @@
 package com.egnify.vignan.pojos;
 
+import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.Comparator;
 
 /**
  * Created by janardhanyerranagu on 4/1/16.
  */
-public class stu_marks {
+public class stu_marks implements Serializable {
     String std_id,std_name;
     double total;
     int mid1,mid2,mid3;

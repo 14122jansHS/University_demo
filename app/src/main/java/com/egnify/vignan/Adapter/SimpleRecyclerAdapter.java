@@ -21,14 +21,20 @@ import java.util.List;
  * Created by Suleiman on 14-04-2015.
  */
 public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAdapter.VersionViewHolder> {
-    List<String> versionModels;
-    Boolean isHomeList = false;
-
     public static List<String> homeActivitiesList = new ArrayList<String>();
     public static List<String> homeActivitiesSubList = new ArrayList<String>();
+    List<String> versionModels;
+    Boolean isHomeList = false;
     Context context;
     OnItemClickListener clickListener;
 
+
+    public SimpleRecyclerAdapter(Context context, List<String> versionModels) {
+        isHomeList = true;
+        this.context = context;
+        this.versionModels = versionModels;
+        setHomeActivitiesList(context);
+    }
 
     public void setHomeActivitiesList(Context context) {
         String[] listArray = context.getResources().getStringArray(R.array.home_activities);
@@ -39,23 +45,18 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
         }
     }
 
-    public SimpleRecyclerAdapter(Context context) {
-        isHomeList = true;
-        this.context = context;
-        setHomeActivitiesList(context);
-    }
 
-
-    public SimpleRecyclerAdapter(List<String> versionModels) {
+   /* public SimpleRecyclerAdapter(List<String> versionModels) {
         isHomeList = false;
         this.versionModels = versionModels;
 
-    }
+    }*/
 
     @Override
     public VersionViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recyclerlist_item, viewGroup, false);
         VersionViewHolder viewHolder = new VersionViewHolder(view);
+
         return viewHolder;
     }
 
@@ -77,6 +78,13 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
             return versionModels == null ? 0 : versionModels.size();
     }
 
+    public void SetOnItemClickListener(final OnItemClickListener itemClickListener) {
+        this.clickListener = itemClickListener;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+    }
 
     class VersionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         CardView cardItemLayout;
@@ -102,14 +110,6 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
         public void onClick(View v) {
             clickListener.onItemClick(v, getPosition());
         }
-    }
-
-    public interface OnItemClickListener {
-        public void onItemClick(View view, int position);
-    }
-
-    public void SetOnItemClickListener(final OnItemClickListener itemClickListener) {
-        this.clickListener = itemClickListener;
     }
 
 }

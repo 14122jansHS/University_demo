@@ -1,10 +1,15 @@
 package com.egnify.vignan.pojos;
 
+import java.io.Serializable;
+
 /**
  * Created by janardhanyerranagu on 3/28/16.
  */
-public class fac_info {
+public class fac_info implements Serializable {
     String faculty_score;
+    String teacher_name;
+    String mobile;
+    String email;
 
     public String getTeacher_name() {
         return teacher_name;
@@ -37,8 +42,4 @@ public class fac_info {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    String teacher_name;
-    String mobile;
-    String email;
 }

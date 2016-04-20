@@ -1,9 +1,13 @@
 package com.egnify.vignan.pojos;
 
+import java.io.Serializable;
+
 /**
  * Created by janardhanyerranagu on 3/27/16.
  */
-public class resea {
+public class resea implements Serializable {
+    String sub_topic_id, sub_topic_name, score;
+
     public String getSub_topic_name() {
         return sub_topic_name;
     }
@@ -27,6 +31,4 @@ public class resea {
     public void setSub_topic_id(String sub_topic_id) {
         this.sub_topic_id = sub_topic_id;
     }
-
-    String sub_topic_id,sub_topic_name,score;
 }

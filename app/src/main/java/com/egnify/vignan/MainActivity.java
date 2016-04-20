@@ -1,12 +1,7 @@
 package com.egnify.vignan;
 
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -16,7 +11,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.graphics.Palette;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -27,24 +21,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.RotateAnimation;
-import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.egnify.vignan.Adapter.SimpleRecyclerAdapter;
 import com.egnify.vignan.model.VersionModel;
-import com.egnify.vignan.utils.p_MyCustomTextView_regular;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import it.gmariotti.cardslib.library.internal.Card;
-import it.gmariotti.cardslib.library.internal.CardExpand;
-import it.gmariotti.cardslib.library.internal.CardHeader;
-import it.gmariotti.cardslib.library.view.CardViewNative;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -198,10 +183,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "My Class");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Counselling");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Attendence");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Extra Activities");
+        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Attendance");
+        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Mid Marks");
+        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Final Marks");
+        //adapter.addFrag(new DummyFragment(getResources().getColor(R.color.ripple_material_light)), "Extra Activities");
         viewPager.setAdapter(adapter);
     }
 
@@ -221,6 +206,12 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
 
     static class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -253,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public static class DummyFragment extends Fragment {
+    public class DummyFragment extends Fragment {
         int color;
         SimpleRecyclerAdapter adapter;
 
@@ -274,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
 
             RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.dummyfrag_scrollableview);
 
-            //Create a Card
+           /* //Create a Card
             Card card = new Card(getActivity());
 
             //Create a CardHeader
@@ -297,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
 
             //Set card in the cardView
             CardViewNative cardView = (CardViewNative) view.findViewById(R.id.carddemo_example_card_expand1);
-            cardView.setCard(card);
+            cardView.setCard(card);*/
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getBaseContext());
             recyclerView.setLayoutManager(linearLayoutManager);
             recyclerView.setHasFixedSize(true);
@@ -307,15 +298,10 @@ public class MainActivity extends AppCompatActivity {
                 list.add(VersionModel.data[i]);
             }
 
-            adapter = new SimpleRecyclerAdapter(list);
+            adapter = new SimpleRecyclerAdapter(MainActivity.this, list);
             recyclerView.setAdapter(adapter);
 
             return view;
         }
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
 }

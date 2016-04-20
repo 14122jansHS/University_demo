@@ -1,11 +1,14 @@
 package com.egnify.vignan.pojos;
 
+import java.io.Serializable;
+
 /**
  * Created by janardhanyerranagu on 3/26/16.
  */
-public class attend_info {
+public class attend_info implements Serializable {
     String exam;
     String class_avg;
+    String marks;
 
     public String getExam() {
         return exam;
@@ -30,6 +33,4 @@ public class attend_info {
     public void setMarks(String marks) {
         this.marks = marks;
     }
-
-    String marks;
 }
