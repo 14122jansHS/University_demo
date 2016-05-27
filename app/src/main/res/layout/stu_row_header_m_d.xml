@@ -10,9 +10,9 @@
         android:layout_height="40dp"
         android:background="@color/lblue"
         android:orientation="horizontal"
-        android:weightSum="6">
+        android:weightSum="6.1">
 
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
             android:id="@+id/points"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -20,31 +20,35 @@
             android:layout_weight="3.5"
             android:gravity="center"
             android:text="Student Name"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 <LinearLayout
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
-    android:weightSum="2"
-    android:layout_weight="2.5">
-    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+    android:layout_weight="2.5"
+    android:weightSum="2">
+
+    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
 
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_weight="1.2"
         android:gravity="center"
+        android:text="Attendance %"
         android:textColor="@color/white"
-        android:text="Attendance" />
-    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        android:textSize="12sp" />
 
+    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_weight="1"
         android:gravity="center"
+        android:text="Marks %"
         android:textColor="@color/white"
-        android:text="Marks " />
+        android:textSize="12sp" />
 </LinearLayout>
 
     </LinearLayout>

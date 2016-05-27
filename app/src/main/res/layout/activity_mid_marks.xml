@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.egnify.vignan.Activities.mid_marks">
+    tools:context="com.egnify.University_demo.Activities.mid_marks">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -62,7 +62,7 @@
                                 android:layout_height="match_parent"
                                 android:src="@drawable/ic_clipboard_text" />
 
-                            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
@@ -92,7 +92,7 @@
                         android:paddingLeft="@dimen/dimen8"
                         android:paddingRight="@dimen/dimen8">
 
-                        <com.egnify.vignan.utils.p_MyCustomTextView
+                        <com.egnify.University_demo.utils.p_MyCustomTextView
                             android:id="@+id/sub_namee2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                            <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                                 android:id="@+id/total_m"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                            <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                                 android:id="@+id/present_m"
                                 android:layout_width="wrap_content"
 
@@ -199,7 +199,7 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                            <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                                 android:id="@+id/absent_m"
                                 android:layout_width="wrap_content"
 
@@ -235,7 +235,7 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                            <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                                 android:id="@+id/s_per_m"
                                 android:layout_width="wrap_content"
 

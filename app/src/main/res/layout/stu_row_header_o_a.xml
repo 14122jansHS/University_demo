@@ -12,7 +12,7 @@ android:layout_marginTop="@dimen/dimen8"
         android:orientation="horizontal"
         android:weightSum="6">
 
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
             android:id="@+id/points"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -25,44 +25,48 @@ android:layout_marginTop="@dimen/dimen8"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
-    android:weightSum="4"
-    android:layout_weight="3.5">
-    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+    android:layout_weight="3.5"
+    android:weightSum="4">
+
+    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
 
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_weight="1"
         android:gravity="center"
-        android:textColor="@color/white"
-        android:text="MID1 " />
-    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        android:text="MID1 "
+        android:textColor="@color/white" />
+
+    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
 
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_weight="1"
         android:gravity="center"
-        android:textColor="@color/white"
-        android:text="MID2 " />
-    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        android:text="MID2 "
+        android:textColor="@color/white" />
+
+    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
 
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:textColor="@color/white"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="MID3 " />
-    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        android:text="MID3 "
+        android:textColor="@color/white" />
+
+    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
 
         android:layout_width="0dp"
-        android:layout_weight="1"
-        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="AVG" />
+        android:text="AVG"
+        android:textColor="@color/white" />
 </LinearLayout>
 
     </LinearLayout>

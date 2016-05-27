@@ -1,24 +1,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="@dimen/dimen72"
     android:background="@color/white"
-    android:padding="@dimen/dimen8"
-    tools:context="com.egnify.vignan.Activities.research_contri$PlaceholderFragment">
+    android:padding="@dimen/dimen8">
 
     <ScrollView
-        android:layout_width="match_parent"
         android:id="@+id/sv_main_layout"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/main_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="@dimen/below_toolbar"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/below_toolbar">
 
            <!-- <LinearLayout
                 android:layout_width="match_parent"
@@ -35,12 +32,12 @@
                     android:text="OverAll Score: "
                     android:textColor="@color/white" />
             </LinearLayout>-->
-            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+            <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                 android:id="@+id/over_p"
-                android:gravity="center"
-                android:padding="@dimen/dimen8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen8"
                 android:text="OverAll Score: "
                 android:textColor="@color/primary_text" />
            <!-- <com.rey.material.widget.ProgressView

@@ -3,13 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/pading"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.egnify.vignan.Fragments.class_attendance">
+    tools:context="com.egnify.University_demo.Fragments.class_attendance">
 
     <LinearLayout
+        android:id="@+id/main_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/main_layout"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,7 +24,7 @@
                 android:layout_height="35dp"
                 android:background="@color/red">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/ob_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -36,12 +35,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="80dp"
                 android:id="@+id/de_click"
+                android:layout_width="80dp"
                 android:layout_height="35dp"
                 android:background="@color/white">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/de_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,7 +58,6 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/chartheader"
                 android:layout_width="fill_parent"
@@ -103,12 +101,12 @@
 
 <LinearLayout
     android:id="@+id/details_ll"
-    android:visibility="gone"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen56"
     android:background="@drawable/shadow_bg"
     android:orientation="vertical"
-    android:layout_marginBottom="@dimen/dimen56"
-    android:layout_height="match_parent">
+    android:visibility="gone">
     <include layout="@layout/stu_row_header"/>
     <ScrollView
         android:layout_width="match_parent"

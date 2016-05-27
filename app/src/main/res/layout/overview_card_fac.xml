@@ -9,8 +9,8 @@
         android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
-       android:gravity="center_vertical"
         android:background="@color/white"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
         <com.github.siyamed.shapeimageview.CircularImageView
             android:id="@+id/fac_pic"
@@ -24,7 +24,7 @@
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                 android:id="@+id/fac_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:textColor="@color/primary_text"
                 android:textSize="18sp" />
 
-            <com.egnify.vignan.utils.p_MyCustomTextView
+            <com.egnify.University_demo.utils.p_MyCustomTextView
                 android:id="@+id/pro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,8 +51,8 @@
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignParentRight="true"
-        android:gravity="center"
-        android:background="@color/yellow">
+        android:background="@color/yellow"
+        android:gravity="center">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/marks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,12 +69,12 @@
                 android:textColor="@color/white"
                 android:textSize="32sp" />
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="POINTS"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@+id/marks"
+                android:layout_centerHorizontal="true"
+                android:text="POINTS"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
         </RelativeLayout>

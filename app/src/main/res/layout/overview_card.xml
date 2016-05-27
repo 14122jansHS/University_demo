@@ -24,21 +24,21 @@ android:layout_marginTop="@dimen/card_top"
              android:layout_centerHorizontal="true"
                 android:orientation="vertical">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+                    android:id="@+id/marks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                 android:layout_centerHorizontal="true"
+                    android:layout_centerHorizontal="true"
                     android:text="120"
-                    android:id="@+id/marks"
                     android:textColor="@color/white"
                     android:textSize="32sp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="POINTS"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                   android:layout_alignParentBottom="true"
+                    android:text="POINTS"
                     android:textColor="@color/white"
                     android:textSize="10sp" />
             </RelativeLayout>
@@ -51,13 +51,13 @@ android:layout_marginTop="@dimen/card_top"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:orientation="vertical">
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/perf_name"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:textColor="@color/primary_text"
                 android:text="Allotted Class"
+                android:textColor="@color/primary_text"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -72,7 +72,7 @@ android:layout_marginTop="@dimen/card_top"
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
         android:src="@drawable/shadow_oc" />
 </RelativeLayout>

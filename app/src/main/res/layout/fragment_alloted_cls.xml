@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.egnify.vignan.Fragments.alloted_cls">
+    tools:context="com.egnify.University_demo.Fragments.alloted_cls">
 
     <!-- TODO: Update blank fragment layout -->
    <include layout="@layout/bar_chart"/>

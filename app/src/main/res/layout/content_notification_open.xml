@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dimen8"
+    android:layout_marginTop="64dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/pro_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen8"
+                android:paddingRight="@dimen/dimen8"
+                android:weightSum="7">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/feed_item_profile_pic"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/place_holder"
+                    app:siBorderColor="@color/white"
+                    app:siBorderWidth="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/feed_item_profile_pic"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/feed_item_profile_info_padd">
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Janardhan"
+                        android:textColor="@color/black"
+
+                        android:textSize="18sp" />
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                        android:id="@+id/timestamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:textColor="@color/timestamp"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cat_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+
+                    android:layout_weight="2"
+                    android:background="@color/red"
+                    android:gravity="center">
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                        android:id="@+id/categ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="Exams"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pro_ll"
+
+                android:paddingLeft="@dimen/dimen8"
+                android:paddingRight="@dimen/dimen8"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/title"
+                android:padding="@dimen/dimen8"
+                android:visibility="gone" />
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                android:id="@+id/msgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_view"
+                android:layout_marginBottom="@dimen/dimen8"
+                android:layout_marginRight="@dimen/dimen8"
+
+                android:padding="@dimen/dimen8"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

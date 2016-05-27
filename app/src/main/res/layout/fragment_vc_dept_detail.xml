@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.egnify.vignan.Fragments.vc_dept_detail">
+    tools:context="com.egnify.University_demo.Fragments.vc_dept_detail">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

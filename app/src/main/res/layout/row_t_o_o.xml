@@ -2,55 +2,58 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="52dp">
+    android:layout_height="52dp"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:weightSum="6">
 
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+            android:id="@+id/metricname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:layout_weight="2"
-          android:paddingLeft="@dimen/dimen8"
-            android:id="@+id/metricname"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen8"
             android:text="Mid 1" />
 
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+            android:id="@+id/mid1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:gravity="center"
-            android:id="@+id/mid1"
             android:text="19" />
 
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
             android:id="@+id/mid2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="17" />
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
+
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
             android:id="@+id/mid3"
-            android:text="20" />
-        <com.egnify.vignan.utils.p_MyCustomTextView_mbold
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:gravity="center"
+            android:text="20" />
+
+        <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
             android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="20" />
     </LinearLayout>
     <View

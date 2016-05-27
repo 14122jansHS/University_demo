@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_ht">280dp</dimen>
+    <dimen name="profile_ht">260dp</dimen>
+    <dimen name="dummy_ht">150dp</dimen>
+</resources>

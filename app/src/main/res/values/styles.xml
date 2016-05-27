@@ -12,10 +12,13 @@
         <item name="android:background">@color/a2</item>
         <item name="rd_rippleColor">#33000000</item>
         <item name="rd_cornerRadius">4dp</item>
-
         <item name="rd_delayClick">afterRelease</item>
-
         <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+    </style>
+
+    <style name="SimpleDialogLight" parent="Material.App.Dialog.Simple.Light">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -60,6 +63,14 @@
         <item name="cardElevation">@dimen/card_elevation</item>
         <item name="cardPreventCornerOverlap">false</item>
         <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 
     <style name="LightInCircularProgressDrawable" parent="Material.Drawable.CircularProgress">

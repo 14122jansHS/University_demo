@@ -44,7 +44,7 @@
                     app:siBorderColor="@color/white"
                     app:siBorderWidth="2dp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                     android:orientation="horizontal"
                     android:weightSum="1">
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
@@ -72,7 +72,7 @@
                         android:layout_height="match_parent"
                         android:background="@color/white" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"

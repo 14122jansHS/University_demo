@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF0000</color>
-    <color name="colorPrimaryDark">#e53935</color>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
     <color name="colorAccent">#2196F3</color>
     <color name="white">#FFFFFF</color>
     <color name="tab_bg">#FAFAFA</color>
@@ -42,9 +42,23 @@
     <color name="lred">#FF0000</color>
     <color name="lgreen">#96D100</color>
     <color name="blue">#00A8FF</color>
+    <color name="todored">#DD4E40</color>
+    <color name="smoke_white">#33F5F5F5</color>
     <color name="mdtp_transparent_black">#7f000000</color>
     <color name="black_alpha_40">#66000000</color>
     <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
     <color name="colorControlHighlight">@color/fifty_percent_transparency_grey_400</color>
     <color name="fifty_percent_transparency_grey_400">#80bdbdbd</color>
-    <color name="cyan">#00ACC1</color></resources>
+    <color name="cyan">#00ACC1</color>
+    <color name="lwhite">#e6e6e6</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF9900</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="dred">#DD4E12</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+</resources>

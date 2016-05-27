@@ -2,12 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
-
+        android:id="@+id/stu_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -32,17 +30,17 @@
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:id="@+id/stu_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dimen8"
-                    android:text="Ramesh"
                     android:singleLine="true"
-                    android:textSize="12sp"
-                    android:textColor="@color/primary_text" />
+                    android:text="Ramesh"
+                    android:textColor="@color/primary_text"
+                    android:textSize="12sp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/stu_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -59,51 +57,56 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3.5"
-            android:weightSum="4"
             android:gravity="center"
-            android:orientation="horizontal">
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/m1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:layout_marginLeft="@dimen/dimen8"
                 android:text="100"
                 android:textColor="@color/primary_text"
                 android:textSize="14dp" />
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/m2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:layout_marginLeft="@dimen/dimen8"
                 android:text="100"
                 android:textColor="@color/primary_text"
                 android:textSize="14dp" />
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/m3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:layout_marginLeft="@dimen/dimen8"
                 android:text="100"
                 android:textColor="@color/primary_text"
                 android:textSize="14dp" />
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/avg"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:layout_marginLeft="@dimen/dimen8"
                 android:text="100"
                 android:textColor="@color/primary_text"
                 android:textSize="14dp" />
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

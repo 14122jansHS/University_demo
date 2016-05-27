@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.egnify.vignan.utils.p_MyCustomTextView_mbold
+<com.egnify.University_demo.utils.p_MyCustomTextView_mbold xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/textview_ll"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
@@ -7,5 +7,4 @@
     android:gravity="center"
     android:text="Alloted"
     android:textColor="@color/white"
-    android:textSize="12dp"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    android:textSize="12dp" />

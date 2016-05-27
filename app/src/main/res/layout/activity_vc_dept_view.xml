@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.egnify.vignan.Activities.vc_dept_view">
+    tools:context="com.egnify.University_demo.Activities.vc_dept_view">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -23,25 +23,32 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
+            <ImageView
+                android:id="@+id/img_bell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dimen8"
+                android:src="@drawable/ic_bell" />
         </android.support.v7.widget.Toolbar>
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
-            android:background="@color/white"
-            app:tabTextColor="@color/secondary_text"
-            app:tabSelectedTextColor="@color/primary_text"
-            app:tabIndicatorColor="@color/red"
-            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/red"
+            app:tabSelectedTextColor="@color/primary_text"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/secondary_text" />
 
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/container"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <com.rey.material.widget.ProgressView
@@ -51,29 +58,32 @@
         android:layout_below="@+id/profile_ll"
         android:layout_gravity="center"
         app:v_styleId="@style/LightInCircularProgressDrawable" />
+
     <LinearLayout
         android:id="@+id/ll_retry"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:visibility="gone"
         android:layout_gravity="center"
-        android:orientation="vertical">
-        <com.egnify.vignan.utils.p_MyCustomTextView
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.egnify.University_demo.utils.p_MyCustomTextView
             android:id="@+id/msg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textSize="15sp"
             android:layout_marginLeft="@dimen/dimen32"
-            android:text="Please Check Your Internet Connection!!"/>
+            android:text="Please Check Your Internet Connection!!"
+            android:textSize="15sp" />
+
         <com.rey.material.widget.Button
             android:id="@+id/retry"
-            android:background="@color/accent"
             android:layout_width="wrap_content"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
-            android:gravity="center"
             android:layout_height="45dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/accent"
+            android:gravity="center"
             android:padding="@dimen/dimen8"
             android:text="Retry"
             android:textColor="@color/white" />

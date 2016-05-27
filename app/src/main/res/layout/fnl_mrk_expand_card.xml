@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:id="@+id/point_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow">
+
+                <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="112"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+            </RelativeLayout>
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                android:id="@+id/met_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3.5"
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/dimen8"
+                android:singleLine="true"
+                android:text="@string/clickme"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="@dimen/dimen8"
+                android:src="@drawable/down_arrow" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/b_line"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/main_ll"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/expandable"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/table_header"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/yellow"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:text="Subject"
+                    android:textColor="@color/white" />
+
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Mid"
+                    android:textColor="@color/white" />
+
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Ext"
+                    android:textColor="@color/white" />
+
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Status"
+                    android:textColor="@color/white" />
+
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:text="year"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

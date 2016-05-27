@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/window_bg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.egnify.vignan.Activities.ScrollingActivity"
+    tools:context="com.egnify.University_demo.Activities.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
 <LinearLayout

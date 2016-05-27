@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
@@ -32,17 +31,17 @@
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:id="@+id/stu_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dimen8"
-                    android:text="Ramesh"
                     android:singleLine="true"
-                    android:textSize="12sp"
-                    android:textColor="@color/primary_text" />
+                    android:text="Ramesh"
+                    android:textColor="@color/primary_text"
+                    android:textSize="12sp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/stu_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

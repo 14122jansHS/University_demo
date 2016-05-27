@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen8"
+        android:background="@drawable/shadow_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/feed_item_profile_pic"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/place_holder"
+                    app:siBorderColor="@color/primary_text"
+                    app:siBorderWidth="1dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/feed_item_profile_info_padd">
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+                        android:id="@+id/name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/feed_item_profile_name" />
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                        android:id="@+id/timestamp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/timestamp"
+                        android:textSize="@dimen/feed_item_timestamp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
+                android:id="@+id/heading"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_marginRight="@dimen/dimen8"
+                android:paddingBottom="5dp"
+
+                android:text="Colorado Weighs Alternative to Affordable Care"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/txholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_marginRight="@dimen/dimen8"
+                android:layout_marginTop="@dimen/dimen8"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/status_holder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                        android:id="@+id/txtStatusMsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="@dimen/dimen8" />
+
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+                        android:id="@+id/txtUrl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:linksClickable="true"
+                        android:maxLines="2"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                        android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                        android:textColorLink="@color/link" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/feedImage1"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#F6F3F4"
+             android:gravity="right"
+             android:layout_marginTop="@dimen/dimen8"
+             android:padding="@dimen/dimen8">
+
+             <ImageView
+                 android:id="@+id/img_share"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right"
+                 android:src="@drawable/ic_share_variant_b" />
+         </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cat_ll"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:padding="@dimen/dimen8">
+
+        <com.egnify.University_demo.utils.p_MyCustomTextView_regular
+            android:id="@+id/categ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Exams"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>

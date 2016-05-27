@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.egnify.vignan.Activities.student">
+    tools:context="com.egnify.University_demo.Activities.student">
 
     <RelativeLayout
         android:id="@+id/prof"
@@ -31,6 +31,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_arrow_left" />
+
+            <ImageView
+                android:id="@+id/img_bell"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_bell" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -50,7 +57,7 @@
                 app:siBorderColor="@color/white"
                 app:siBorderWidth="2dp" />
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_bold
+            <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +74,7 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:id="@+id/stu_id"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -82,7 +89,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/white" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:id="@+id/course"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -139,7 +146,7 @@
             android:layout_marginTop="56dp"
             android:visibility="gone">
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                 android:id="@+id/count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

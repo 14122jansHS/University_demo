@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.egnify.vignan.Activities.ScrollingActivity">
+    tools:context="com.egnify.University_demo.Activities.ScrollingActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -44,7 +44,7 @@
                     app:siBorderColor="@color/white"
                     app:siBorderWidth="2dp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
@@ -52,7 +52,7 @@
                     android:textColor="@color/white"
                     android:textSize="21sp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"

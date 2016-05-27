@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.egnify.vignan.Activities.student">
+    tools:context="com.egnify.University_demo.Activities.student">
 
     <RelativeLayout
         android:id="@+id/main_panel"
@@ -53,7 +53,7 @@
                         app:siBorderColor="@color/white"
                         app:siBorderWidth="2dp" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                         android:id="@+id/name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                         android:orientation="horizontal"
                         android:weightSum="1">
 
-                        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -82,7 +82,7 @@
                             android:layout_height="match_parent"
                             android:background="@color/primary_text" />
 
-                        <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                        <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -116,7 +116,7 @@
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/ic_clipboard_text" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/att_image"
@@ -147,7 +147,7 @@
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/ic_poll_box" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/mark_image"
@@ -178,7 +178,7 @@
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/ic_chart_line" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/fmark_image"
@@ -209,7 +209,7 @@
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/ic_action_coins" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/fee_image"
@@ -260,7 +260,7 @@
             android:layout_marginTop="56dp"
             android:visibility="gone">
 
-            <com.egnify.vignan.utils.p_MyCustomTextView_regular
+            <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                 android:id="@+id/count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

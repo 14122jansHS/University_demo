@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.egnify.vignan.Activities.vc_dept_view">
+    tools:context="com.egnify.University_demo.Activities.vc_dept_view">
     <item
         android:id="@+id/action_logout"
         android:orderInCategory="100"

@@ -31,7 +31,7 @@
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:id="@+id/stu_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                     android:textColor="@color/primary_text"
                     android:textSize="16sp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/stu_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -61,7 +61,8 @@
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="4">
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/m1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -71,7 +72,8 @@
                 android:text="100"
                 android:textColor="@color/primary_text"
                 android:textSize="14dp" />
-            <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+
+            <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                 android:id="@+id/m2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

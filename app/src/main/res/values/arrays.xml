@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="landing_bg">
+        <item>@color/dred</item>
+        <item>@color/purpule</item>
 
+
+    </array>
+    <array name="icons">
+        <item>R.drawable.arrows</item>
+        <item>R.drawable.arrows</item>
+
+    </array>
+    <string-array name="hints">
+        <item>schooling</item>
+        <item>Intermediate</item>
+    </string-array>
+    <string-array name="titles">
+        <item>schooling</item>
+        <item>Intermediate</item>
+    </string-array>
     <string-array name="home_activities">
         <item>FAB &amp; Toolbar Animation</item>
         <item>Transparent Toolbar Test</item>

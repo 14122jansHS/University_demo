@@ -1,8 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.egnify.vignan2.Fragments.teaching.mid1_t">
+    android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -25,7 +23,7 @@
                 android:layout_height="35dp"
                 android:background="@color/red">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/ob_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,7 +39,7 @@
                 android:layout_height="35dp"
                 android:background="@color/white">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/de_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -61,7 +59,6 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/chartheader"
                 android:layout_width="fill_parent"
@@ -80,9 +77,9 @@
 
                     <com.github.mikephil.charting.charts.BarChart xmlns:android="http://schemas.android.com/apk/res/android"
                         android:id="@+id/chartview"
-                        android:padding="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp" />
+                        android:layout_height="200dp"
+                        android:padding="16dp" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -99,7 +96,7 @@
                     android:background="@color/dblue"
                     android:orientation="horizontal">
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:id="@+id/metric_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -119,7 +116,7 @@
                     android:orientation="horizontal"
                     android:weightSum="5">
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                android:layout_marginLeft="16dp"
@@ -129,17 +126,17 @@
                         android:textColor="@color/white"
                         android:textSize="12dp" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="1"
+                        android:layout_weight="1.1"
                         android:gravity="center"
-                        android:text="Percentage"
+                        android:text="Percentage %"
                         android:textColor="@color/white"
                         android:textSize="12dp" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"

@@ -38,7 +38,7 @@
                 android:layout_toRightOf="@+id/hod_pic"
                 android:orientation="vertical">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:id="@+id/dept_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                     android:textColor="@color/primary_text"
                     android:textSize="16sp" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView
+                <com.egnify.University_demo.utils.p_MyCustomTextView
                     android:id="@+id/hod_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:layout_centerInParent="true"
                 android:orientation="vertical">
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_bold
+                <com.egnify.University_demo.utils.p_MyCustomTextView_bold
                     android:id="@+id/points"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
 
                     android:textColor="@color/white" />
 
-                <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -105,9 +105,9 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
                 android:layout_centerVertical="true"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -115,15 +115,15 @@
                     android:layout_weight="0.7"
                     android:orientation="vertical">
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Alloted"
                         android:layout_gravity="center"
+                        android:text="Alloted"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:id="@+id/alloted"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -143,19 +143,19 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.7"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
                     android:orientation="vertical">
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Counselling"
                         android:layout_gravity="center"
+                        android:text="Counselling"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:id="@+id/counselling"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -179,15 +179,15 @@
 
                     android:orientation="vertical">
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_regular
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_regular
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Research"
                         android:layout_gravity="center"
+                        android:text="Research"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
-                    <com.egnify.vignan.utils.p_MyCustomTextView_mbold
+                    <com.egnify.University_demo.utils.p_MyCustomTextView_mbold
                         android:id="@+id/research"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.egnify.vignan.Activities.research_contri">
+    tools:context="com.egnify.University_demo.Activities.research_contri">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -27,21 +27,21 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
-            android:background="@color/tab_bg"
-            app:tabTextColor="@color/secondary_text"
-            app:tabSelectedTextColor="@color/primary_text"
-            app:tabIndicatorColor="@color/red"
-            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@color/tab_bg"
+            app:tabIndicatorColor="@color/red"
+            app:tabSelectedTextColor="@color/primary_text"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/secondary_text" />
 
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/container"
-        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
